@@ -1,0 +1,135 @@
+.portfol {
+    max-width: 100vw;
+    background: #f3f3f3;
+    padding: 70px 0;
+    padding-bottom: 150px;
+
+    &__title {
+        color: #011023;
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        margin-top: 70px;
+        margin-bottom: 100px;
+    }
+
+    &__cl-text {
+        color: #555;
+        letter-spacing: 2px;
+    }
+
+    &__flex {
+        width: 100%;
+        padding-left: 0;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__iteam {
+        width: 290px;
+        border: 1px solid #011023; 
+        background-color: #011023;
+    }
+
+    &__img {
+        width: 100%;
+        height: 200px;
+    }
+
+    &__demo {
+        font-weight: 600;
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px 15px;
+        background: #fff;
+        color: #011023;
+        border-radius: 20px;
+        margin: 10px 0 10px 7px;
+    }
+}
+
+@media only screen and (max-width: 1222px) {
+    .portfol {
+
+        &__iteam {
+            max-width: 260px;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1090px) {
+    .portfol {
+
+        &__iteam {
+            max-width: 240px;
+        }
+
+        &__img {
+            height: 180px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .portfol {
+
+        &__iteam {
+            max-width: 220px;
+        }
+
+        &__img {
+            height:160px;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 935px) {
+    .portfol {
+
+        &__iteam {
+            max-width: 260px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+
+        &__img {
+            height:180px;
+        }
+
+        &__flex {
+            flex-wrap: wrap;
+        }
+
+    }
+}
+
+@media only screen and (max-width: 810px) {
+    .portfol {
+        &__flex {
+            justify-content: space-evenly;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .portfol {
+        
+
+        &__iteam {
+            max-width: 350px;
+            margin-left: 0;
+        }
+
+        &__img {
+            height: 190px;
+        }
+    }
+}
+
+
+

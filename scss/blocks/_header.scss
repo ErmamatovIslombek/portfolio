@@ -1,0 +1,168 @@
+.header {
+    max-width: 100vw;
+    padding: 25px 0;
+    background: #102034;
+    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 30;
+    border-bottom: 2px solid #fff;
+
+    &__flex {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__open-link,
+    &__close-link {
+        text-decoration: none;
+        display: none;
+    }
+
+
+
+
+    &__logo-link {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    &__logo {
+        font-size: 38px;
+        font-weight: 600;
+        border: 2px solid #fff;
+        padding: 5px;
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    &__nav-link {
+        text-decoration: none;
+        font-size: 14px;
+        color: #fff;
+        font-weight: 500;
+        letter-spacing: 1.2px;
+        cursor: pointer;
+        margin-right: 27px;
+
+        &:nth-child(8) {
+            margin-right: 0;
+        }
+    }
+
+    &__resume-btn {
+        @include resume-btn;
+    }
+
+    &__res-btn {
+        @include resume-btn;
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 1075px) {
+    .header {
+        &__nav-link {
+            font-size: 12px;
+            margin-right: 24px;
+        }
+
+        &__resume-btn {
+            font-size: 14px;
+            padding: 14px 28px;
+        }
+    }
+}
+
+@media only screen and (max-width: 955px) {
+    .header {
+        &__nav-link {
+            font-size: 10px;
+            margin-right: 20px;
+        }
+
+        &__resume-btn {
+            font-size: 13px;
+            padding: 13px 26px;
+        }
+    }
+}
+
+@media only screen and (max-width: 865px) {
+    .header {
+        &__nav-link {
+            margin-right: 17px;
+            letter-spacing: 0;
+        }
+
+        &__resume-btn {
+            font-size: 12px;
+            padding: 12px 24px;
+        }
+    }
+}
+
+@media only screen and (max-width: 765px) {
+    .header {
+       &__navbar {
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        height: 100vh;
+        background: #07192F;
+        width: 240px;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+        transition: transform .5s ease;
+        position: fixed;
+        z-index: 10;
+       }
+
+       &__navbar--active {
+        transform: translateX(0);
+       }
+
+       &__open-link,
+       &__close-link {
+           text-decoration: none;
+           display: inline-block;
+       }
+
+       &__close-link {
+        align-self: flex-end;
+        margin-top: 25px;
+       }
+
+       &__res-btn {
+        display: inline-block;
+        padding: 13px 28;
+        font-size: 14px;
+    }
+
+
+       &__nav-link {
+        margin-right: 0;
+        color: #fff;
+        font-size: 13px;
+        margin-top: 30px;
+
+        &:nth-child(8) {
+            margin-bottom: 30px;
+        }
+       }
+
+       &__resume-btn {
+        display: none;
+       }
+    }
+}
+
+
